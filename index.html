@@ -1,1 +1,73 @@
-index
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+
+<body>
+    <!-- Responsive topnav-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="webdesign.html">Web Design</a>
+        <a href="graphicdesign.html">Graphic Design</a>
+        <a href="photography.html">Photography</a>
+        <a href="resume.html">Resume</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+
+    
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+    x.className += " responsive";
+        } else {
+    x.className = "topnav";
+        }
+    }
+    </script>
+
+    <!-- HAMBURGER MENU-->
+
+
+
+
+
+
+    
+    <h1>Hi my name is<br>Yi Huan</h1>
+
+    <h2>
+        Drexel University Undergraduate | UXID
+    </h2>
+
+    <div class="gallery">
+        <img src="media/me-2.webp" alt="headshot"><br>
+    </div>
+
+    <p> I am an aspiring UX/UI Designer based in Philly who values community advocacy and accessibility. A couple activities I enjoy include hiking, kayaking, cooking, martial arts, dance, graphic design and photography!</p>
+
+
+    <div class="container">
+        <a href="photography.html" class="button">see photography :D</a>
+    </div>
+
+
+    <h3>Let's get in touch!</h3>
+    <div id="section2"> 
+        Work: <a href="mailto:yy559@drexel.edu">yihuan.yang@drexel.edu</a><br>
+        SASE: <a href="mailto:sase.drexel.culture@gmail.com">sase.drexel.culture@gmail.com</a><br>
+        Personal: <a href="mailto:yangyihuan4@gmail.com">yangyihuan4@gmail.com</a>
+    </div>
+
+</body>
+
+</html>
