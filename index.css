@@ -20,25 +20,29 @@
 }
 
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #3664c7;
     color: white;
 }
 
-.topnav .icon {
+.topnav a.icon {
     display: none;
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-    float: right;
-    display: block;
+    .topnav a:not(:first-child) 
+        {display: none;}
+
+    .topnav a.icon{
+        float: right;
+        display: block;
     }
-}
+    }
+
+
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
+    .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;

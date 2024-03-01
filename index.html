@@ -17,22 +17,21 @@
         <a href="graphicdesign.html">Graphic Design</a>
         <a href="photography.html">Photography</a>
         <a href="resume.html">Resume</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <div id="main"></div>
     </div>
+    
 
     <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-    x.className += "responsive";
-        } else {
-    x.className = "topnav";
+        function mopenNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += "responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    }
     </script>
-
     <!-- HAMBURGER MENU-->
 
 
