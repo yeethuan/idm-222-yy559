@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="index.css"> 
+    <script src="https://kit.fontawesome.com/f4cf6f4ce3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -11,27 +12,55 @@
 
 <body>
     <!-- Responsive topnav-->
-    <div class="topnav" id="myTopnav">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <a href="index.html" class="active">Home</a>
-        <a href="webdesign.html">Web Design</a>
-        <a href="graphicdesign.html">Graphic Design</a>
-        <a href="photography.html">Photography</a>
-        <a href="resume.html">Resume</a>
-        <div id="main"></div>
-    </div>
-    
 
-    <script>
-        function mopenNav() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += "responsive";
-            } else {
-                x.className = "topnav";
-            }
+
+
+<div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="active">Home</a>
+    <a href="webdesign.html">Web Design</a>
+    <a href="graphicdesign.html">Graphic Design</a>
+    <a href="photography.html">Photography</a>
+    <a href="resume.html">Resume</a>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="active">Home</a>
+    <a href="webdesign.html">Web Design</a>
+    <a href="graphicdesign.html">Graphic Design</a>
+    <a href="photography.html">Photography</a>
+    <a href="resume.html">Resume</a>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+            
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+
+    }
+    
+    function toggleNav() {
+        var sidepanel = document.getElementById("mySidepanel");
+        var topnav = document.getElementById("myTopnav");
+
+        if (sidepanel.style.width === "250px") {
+            sidepanel.style.width = "0";
+            topnav.style.display = "block";
+        } else {
+            sidepanel.style.width = "250px";
+            topnav.style.display = "none";
         }
-    </script>
+        
+    }
+</script>
     <!-- HAMBURGER MENU-->
 
 
