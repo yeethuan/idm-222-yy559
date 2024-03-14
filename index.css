@@ -1,7 +1,17 @@
+@font-face {
+    font-family:"Madimi_One";
+    src: url(fonts/MadimiOne-Regular.ttf),format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* HAMBURGER SIDEBAR */
 
 
-
+.icons {
+    min-width: 48px;
+}
 
 .topnav {
     overflow: hidden;
@@ -67,6 +77,11 @@
     padding-top: 60px;
 }
 
+.fa {
+    font-size: 48px;
+}
+
+
 .sidepanel a {
     padding: 10px 15px;
     text-decoration: none;
@@ -105,7 +120,7 @@
 
 /* Hi my name is*/
 h1 {
-    font-family: verdana;
+    font-family: "Madimi_One";
     color: #597692;
     font-size: 40px;
     margin-left:25px;
