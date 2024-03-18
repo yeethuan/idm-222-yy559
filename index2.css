@@ -6,11 +6,7 @@
 }
 
 
-/* HAMBURGER SIDEBAR */
-.icons {
-    min-width: 48px;
-}
-
+/* TOPNAV START*/
 .topnav {
     overflow: hidden;
     background-color: #CD6767;
@@ -40,7 +36,10 @@
     display: none;
     color:#ffffff;
 }
+/* TOPNAV END*/
 
+
+/* RESPONSIVE CSS*/
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon{
@@ -60,8 +59,13 @@
         text-align: left;
     }
 }
+/* RESPONSIVE CSS*/
 
-/* Side Menu */
+/* HIDDEN HAMBURGER AESTHETICS START*/
+.icons {
+    min-width: 48px;
+}
+
 .sidepanel {
     height: 100%;
     width: 0;
@@ -106,17 +110,26 @@
     .sidepanel {padding-top: 15px;}
     .sidepanel a {font-size: 18px;}
 }
+/* HIDDEN HAMBURGER AESTHETICS END*/
 
 
-/* HAMBURGER SIDEBAR END */
+
+
+
+
 
 
 
 h1 {
-    font-family: verdana;
-    color: #597692;
+    font-family: "Rock_3D", Verdana, Geneva, Tahoma, sans-serif;
+    color: #339cff;
     font-size:40px;
     margin-left: 15px;
+}
+h2 {
+    font-family: "Madimi_One-Regular", Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px
+    
 }
 
 p {
@@ -125,24 +138,24 @@ p {
     font-size:14px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 20px;
 }
 
 img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin: 0;
+    margin: auto;
     text-align: center;
     margin-top: 15px;
+    border-radius: 20px;
 }
 
 /* headshot start*/
 div.gallery {
     float: left;
     width:fit-content;
-    text-align: center;
     color: #ffffff;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin:15px;
 }
 
 div.gallery:hover {
@@ -152,7 +165,7 @@ div.gallery:hover {
 }
 
 div.gallery img {
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
@@ -170,9 +183,8 @@ div.desc {
 /* Footer */
 #footer{
     display: inline-block;
-    width:400px;
-    height:200px;
-    float:right;
+    width:547px;
+    height:170px;
     padding:20px;
     border-radius: 30px;
     background-color: #CD6767;
@@ -181,4 +193,9 @@ div.desc {
     color: #fff9f3;
     text-align: center;
     line-height: 1.5;
+    margin:15px;
+}
+
+#footer[links]{
+    color:#f1f1f1;
 }
