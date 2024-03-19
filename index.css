@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family:"Rock_3D";
+    src: url(fonts/Rock3D-Regular.ttf),format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* TOPNAV START*/
 .topnav {
@@ -20,12 +26,12 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Arial Narrow Bold', sans-serif;
 }
 
 .topnav a:hover {
-    background-color: #CD6767;
-    color: black;
+    background-color: #004594;
+    color: #ffffff;
 }
 
 .topnav a.active {
