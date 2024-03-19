@@ -106,10 +106,10 @@
     color:#f1f1f1;
 }
 
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
     .sidepanel {padding-top: 15px;}
     .sidepanel a {font-size: 18px;}
-}
+} */
 /* HIDDEN HAMBURGER AESTHETICS END*/
 
 
@@ -123,7 +123,7 @@
 h1 {
     font-family: "Rock_3D", Verdana, Geneva, Tahoma, sans-serif;
     color: #339cff;
-    font-size:40px;
+    font-size:60px;
     margin-left: 15px;
 }
 h2 {
@@ -173,6 +173,7 @@ div.desc {
     margin:0;
     padding: 15px;
     text-align: center;
+    
 }
 /* headshot end*/
 
