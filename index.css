@@ -185,7 +185,7 @@ p {
 
 
 /* small screen */
-@media (min-width: 420px) {
+@media (min-width: 420px){
     
     .introduction {
         display: grid;
