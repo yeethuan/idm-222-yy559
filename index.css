@@ -220,7 +220,7 @@ p {
     }
 
     .rounded-box h1{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .rounded-box h2{
@@ -229,7 +229,7 @@ p {
 }
 
 /*medium screen */
-@media (min-width: 850px) {
+@media (min-width: 900px) {
 
     .rounded-box {
         max-width: 90%; 
@@ -242,7 +242,7 @@ p {
     }
 
     .introduction-text{
-        line-height: 30px;
+        line-height: 35px;
     }
 
     .rounded-box h1{
@@ -268,7 +268,6 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top:130px;
-        max-width:90%;
     }
 
     .introduction-text{
