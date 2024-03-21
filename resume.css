@@ -5,37 +5,45 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family:"Poppins-ExtraBold";
+    src: url(fonts/Poppins-ExtraBold.ttf),format('truetype');
+    font-weight: ExtraBold;
+    font-style: normal;
+}
+
 body h1{
     font-family: "Rock_3D";
-    font-size:50px;
-    color: #2800ab;
-    margin:32px;
+    color: #e98d71;
+    margin-left:32px;
+    text-align:center;
 }
 
 h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Poppins-ExtraBold",Verdana, Geneva, Tahoma, sans-serif;
     font-size:20px;
-    color:#414141;
+    color:#dd7d60;
 }
 
 h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:16px;
-    color:#414141;
-    margin-left:32px;
+    color:#5e5e5e;
 }
 
 h4{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:16px;
-    color:#414141;
+    color:#808080;
     margin-left:32px;
+    text-align:center;
 }
 
 ul{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:14px;
-    color:#414141;
+    color:#7d7d7d;
+    line-height:20px;
 }
 
 div.gallery ul{
@@ -52,6 +60,7 @@ div.gallery ul{
 
 .desc img{
     max-width:100%; 
+    border-radius:20px;
 }
 
 
@@ -70,6 +79,10 @@ div.gallery ul{
         border-radius: 30px;
         min-width: fit-content;
     }
+
+    body h1{
+        font-size:20px;
+    }
 }
 
 /* med screen */
@@ -77,6 +90,10 @@ div.gallery ul{
     div.gallery{
         display:grid;
         grid-template-columns: repeat(2, 5fr);
+    }
+
+    body h1{
+        font-size:30px;
     }
 }
 
@@ -87,6 +104,15 @@ div.gallery ul{
     div.gallery{
         display:grid;
         grid-template-columns: repeat(3, 5fr);
+    }
+
+    .desc img{
+        max-width:100%; 
+        border-radius:0px;
+    }    
+
+    body h1{
+        font-size:50px;
     }
 
 }
