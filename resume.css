@@ -60,7 +60,7 @@ h4{
 }
 
 /* med screen */
-@media screen (min-width: 900px){
+@media screen (min-width: 600px){
     .resume{
         display:grid;
         grid-template-columns: repeat(2, 5fr);

@@ -50,7 +50,7 @@ div.gallery img {
 
 
 /* small screen */
-@media (min-width: 420px){
+@media (min-width: 200px){
 
     .desc h1{
         font-size:25px;
@@ -74,7 +74,7 @@ div.gallery img {
 }
 
 /*medium screen */
-@media (min-width: 900px) {
+@media (min-width:900px) {
 
     .desc h1{
         font-size:40px;
