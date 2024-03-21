@@ -52,7 +52,7 @@ div.gallery img {
 /* small screen */
 @media (min-width: 420px){
 
-    body.h1{
+    .desc h1{
         font-size:25px;
         margin-left:15px;
     }
