@@ -2,15 +2,72 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="resume.css"> 
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="normalize.css"> 
+    <script src="https://kit.fontawesome.com/f4cf6f4ce3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Home</title>
 </head>
+
+
+<menu>
+<!-- close side panel -->
+<div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-close"></i>
+    </a>
+    <a href="https://idm-222-yy559.netlify.app/" class="active">Home</a>
+    <a href="webdesign.html">Web Design</a>
+    <a href="graphicdesign.html">Graphic Design</a>
+    <a href="photography.html">Photography</a>
+    <a href="resume.html">Resume</a>
+</div>
+
+<!-- open sidepanel -->
+<div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="active">Home</a>
+    <a href="webdesign.html">Web Design</a>
+    <a href="graphicdesign.html">Graphic Design</a>
+    <a href="photography.html">Photography</a>
+    <a href="resume.html">Resume</a>
+</div>
+
+<!-- side panel js start -->
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+    }
+
+    function toggleNav() {
+        var sidepanel = document.getElementById("mySidepanel");
+        var topnav = document.getElementById("myTopnav");
+
+        if (sidepanel.style.width === "250px") {
+            sidepanel.style.width = "0";
+            topnav.style.display = "block";
+        } else {
+            sidepanel.style.width = "250px";
+            topnav.style.display = "none";
+        }
+        
+    }
+</script>
+<!-- side panel js end -->
+</menu>
+
+
 
 <header class="clearfix">
     <div id="info">     
-        <h1><span itemprop="name">Yi Huan Yang</span></h1>
+        <h1><span itemprop="name">Yi Huan Yang Resume</span></h1>
         <h3><span itemprop="jobTitle">UX/UI Designer and Photographer</span></h3>
         <small itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
             <span itemprop="addressLocality">Philadelphia</span>, 
@@ -24,3 +81,5 @@
         <img src="media/my-headshot.webp" alt="Yi Huan resume photo" itemprop="image" />
     </div>
 </header>
+
+</html>
