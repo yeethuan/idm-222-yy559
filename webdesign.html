@@ -11,57 +11,57 @@
 </head>
 
 
-<menu>
-<!-- close side panel -->
-<div id="mySidepanel" class="sidepanel">
-    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-        <i class="fa fa-close"></i>
-    </a>
-    <a href="https://idm-222-yy559.netlify.app/" class="active">Home</a>
-    <a href="webdesign.html">Web Design</a>
-    <a href="graphicdesign.html">Graphic Design</a>
-    <a href="photography.html">Photography</a>
-    <a href="resume.html">Resume</a>
-</div>
-
-<!-- open sidepanel -->
-<div class="topnav" id="myTopnav">
-    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-        <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="active">Home</a>
-    <a href="webdesign.html">Web Design</a>
-    <a href="graphicdesign.html">Graphic Design</a>
-    <a href="photography.html">Photography</a>
-    <a href="resume.html">Resume</a>
-</div>
-
-<!-- side panel js start -->
-<script>
-    function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-    }
-
-    function toggleNav() {
-        var sidepanel = document.getElementById("mySidepanel");
-        var topnav = document.getElementById("myTopnav");
-
-        if (sidepanel.style.width === "250px") {
-            sidepanel.style.width = "0";
-            topnav.style.display = "block";
-        } else {
-            sidepanel.style.width = "250px";
-            topnav.style.display = "none";
-        }
-        
-    }
-</script>
-<!-- side panel js end -->
-</menu>
+<header>
+    <!-- close side panel -->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-close"></i>
+            </a>
+            <a href="https://idm-222-yy559.netlify.app/" class="active">Home</a>
+            <a href="https://idm-222-yy559.netlify.app/webdesign">Web Design</a>
+            <a href="https://idm-222-yy559.netlify.app/graphicdesign">Graphic Design</a>
+            <a href="https://idm-222-yy559.netlify.app/photography">Photography</a>
+            <a href="https://idm-222-yy559.netlify.app/resume">Resume</a>
+        </div>
+    
+        <!-- open sidepanel -->
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="https://idm-222-yy559.netlify.app/" class="active">Home</a>
+            <a href="https://idm-222-yy559.netlify.app/webdesign">Web Design</a>
+            <a href="https://idm-222-yy559.netlify.app/graphicdesign">Graphic Design</a>
+            <a href="https://idm-222-yy559.netlify.app/photography">Photography</a>
+            <a href="https://idm-222-yy559.netlify.app/resume">Resume</a>
+        </div>
+    
+    <!-- side panel js start -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+            }
+    
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+    
+            function toggleNav() {
+                var sidepanel = document.getElementById("mySidepanel");
+                var topnav = document.getElementById("myTopnav");
+    
+                if (sidepanel.style.width === "250px") {
+                    sidepanel.style.width = "0";
+                    topnav.style.display = "block";
+                } else {
+                    sidepanel.style.width = "250px";
+                    topnav.style.display = "none";
+                }
+                
+            }
+        </script>
+    <!-- side panel js end -->
+    </header>
 
 <body>
 
