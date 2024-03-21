@@ -80,7 +80,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(255, 196, 0);
+    background-color: #ce2a61;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -96,7 +96,7 @@
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
-    color: #d13b00;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
 }
