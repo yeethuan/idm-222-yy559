@@ -8,7 +8,7 @@
 @font-face {
     font-family:"Poppins-ExtraBold";
     src: url(fonts/Poppins-ExtraBold.ttf),format('truetype');
-    font-weight: ExtraBold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -43,12 +43,10 @@ ul{
 }
 
 div.gallery ul{
-    {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size:14px;
         color:#414141;
     }
-}
 
 .desc {
     margin: 32px;
@@ -86,9 +84,8 @@ div.gallery ul{
     }
 
     h4{
-        font-size:14px;
-    }
-}
+        font-size:14px;}
+} /*i can't firgure out the parse error */
 
 /* med screen */
 @media screen (min-width: 600px){
@@ -106,9 +103,8 @@ div.gallery ul{
     }
 
     h4{
-        font-size:14px;
-    }
-}
+        font-size:14px;}
+} /*i can't firgure out the parse error */
 
 
 /*big screen*/
