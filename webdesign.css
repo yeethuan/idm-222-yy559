@@ -35,10 +35,10 @@
 
 
 
-h1 {
+body h1 {
     font-family: "Rock_3D";
-    color: #dd7d60;
-    margin:15px;
+    color: #e98d71;
+    margin-left:15px;
 }
 
 h2 {
@@ -94,7 +94,7 @@ p {
         margin:auto;
     }
 
-    .rounded-box h1{
+    body h1{
         font-size: 22px;
     }
 
@@ -120,7 +120,7 @@ p {
         line-height: 35px;
     }
 
-    .rounded-box h1{
+    body h1{
         font-size: 30px;
     }
 
@@ -149,12 +149,12 @@ p {
         line-height: 30px;
     }
 
-    .rounded-box h1{
-        font-size: 40px;
+    body h1{
+        font-size: 50px;
     }
 
     .rounded-box h2{
-        font-size: 15px;
+        font-size: 20px;
     }
 
 }
