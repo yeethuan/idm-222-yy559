@@ -61,6 +61,16 @@ p {
 }
 
 
+.container{
+    border-radius: 16px;
+    outline: #ffffff;
+}
+
+.button{
+    color:#ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 
 /*!!!!!!content media queries!!!!!!! START*/
