@@ -57,7 +57,18 @@ p {
     margin-right: 15px;
 }
 
+/* Footer */
+footer {
+    background-color: #004594;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
+footer p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 /*!!!!!!content media queries!!!!!!! START*/
