@@ -1,42 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="web-design2.css">
+    <link rel="stylesheet" href="web-design2.css"> 
     <link rel="stylesheet" href="header.css"> 
     <link rel="stylesheet" href="normalize.css"> 
     <script src="https://kit.fontawesome.com/f4cf6f4ce3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Thumbnails</title>
+    <title>Web Design</title>
 </head>
-<body>
-    <div class="card-container">
-        <div class="card" onclick="location.href='project1.html';">
-            <img src="project1-thumbnail.jpg" alt="Project 1">
-            <div class="card-content">
-                <h3>Project 1</h3>
-                <p>Short description of Project 1.</p>
-            </div>
-        </div>
-        
-        <div class="card" onclick="location.href='project2.html';">
-            <img src="project2-thumbnail.jpg" alt="Project 2">
-            <div class="card-content">
-                <h3>Project 2</h3>
-                <p>Short description of Project 2.</p>
-            </div>
-        </div>
-        
-        <div class="card" onclick="location.href='project3.html';">
-            <img src="project3-thumbnail.jpg" alt="Project 3">
-            <div class="card-content">
-                <h3>Project 3</h3>
-                <p>Short description of Project 3.</p>
-            </div>
-        </div>
-        <!-- Add more cards as needed -->
+
+
+<header>
+    <!-- close side panel -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-close"></i>
+        </a>
+        <a href="https://yihuan-yang.netlify.app/" class="active">Home</a>
+        <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
+        <a href="web-design2">Web Design 2</a>
+        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+        <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
     </div>
 
-    <script src="script.js"></script>
+    <!-- open sidepanel -->
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="https://yihuan-yang.netlify.app/" class="active">Home</a>
+        <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
+        <a href="web-design2">Web Design 2</a>
+        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+        <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+    </div>
+    
+    <!-- side panel js start -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+            }
+    
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+    
+            function toggleNav() {
+                var sidepanel = document.getElementById("mySidepanel");
+                var topnav = document.getElementById("myTopnav");
+    
+                if (sidepanel.style.width === "250px") {
+                    sidepanel.style.width = "0";
+                    topnav.style.display = "block";
+                } else {
+                    sidepanel.style.width = "250px";
+                    topnav.style.display = "none";
+                }
+                
+            }
+        </script>
+    <!-- side panel js end -->
+</header>
+
+<body>
+<section id="projects" class="projects-section">
+
+    <h2>All Recipes</h2>   
+    <div class="project-grid" id="project-grid">
+        <div class="project-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/projects/day-night-button.mp4" alt="button-video">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>Recipe Header 1</h3>
+            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="recipe-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/steak-fries.jpg" alt="Recipe Image">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>Recipe Header 2</h3>
+            </a>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+        </div>
+        <div class="recipe-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/steak-fries.jpg" alt="Recipe Image">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>Recipe Header 3</h3>
+            </a>
+            <p>Cras et neque vel nunc vehicula efficitur.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Ask Button -->
+<div class="ask-button">
+    <button id="ask-btn">?</button>
+</div>
+
+<!-- footer -->
+<footer>
+    <p>Yi Huan Yang | yihuan.yang@drexel.edu</p>
+</footer>
+
+
+
+
 </body>
 </html>
