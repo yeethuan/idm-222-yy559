@@ -5,6 +5,14 @@
     font-style: normal;
 }
 
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 /* GRID START!!!! */
 .introduction {
     display:grid;
@@ -63,6 +71,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    margin-top:auto;
 }
 
 footer p {

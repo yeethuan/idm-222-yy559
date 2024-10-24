@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 h1{
     font-family:"Rock_3D";
     color:#e98d71;
@@ -50,11 +57,14 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Push footer to bottom */
 }
 
-footer p {
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+footer p{
+    color:#ffffff;
 }
 
 
