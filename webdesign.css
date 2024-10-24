@@ -5,166 +5,161 @@
     font-style: normal;
 }
 
-/* GRID START!!!! */
-.project {
-    display:grid;
+@font-face {
+    font-family:"Poppins-ExtraBold";
+    src: url(fonts/Poppins-ExtraBold.ttf),format('truetype');
+    font-weight: ExtraBold;
+    font-style: normal;
+}
+
+.projects-section {
+    padding: 50px 0;
+    background-color: #fefefe;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
     margin-bottom: 30px;
-}
-
-.introduction-text{
-    margin:50px;
-}
-
-.pjct-img img{
-    width:100%;
-}
-
-.pjct-img {
-    max-width:30%;
-    display:flex;
-    margin: auto;
-}
-
-.rounded-box {
-    background-color:#004594;
-    border-radius: 30px;
-    float:right;
-    margin-bottom: 30px;
-}
-/* GRID END!!! */
-
-
-
-body h1 {
-    font-family: "Rock_3D";
     color: #e98d71;
-    margin-left:15px;
-}
-
-h2 {
     font-family: "Rock_3D";
-    color: #ffffff;
 }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: #a0bad7;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:#575757;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #777;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.project-card a:visited {
+    text-decoration: none;
 }
 
 
-p {
-    font-family: verdana;
-    color: #ffffff;
-    font-size:14px;
-    margin-left: 15px;
-    margin-right: 15px;
+
+/* Ask Button */
+.ask-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
 }
 
-
-.container{
-    border-radius: 16px;
-    outline: #ffffff;
+#ask-btn {
+    background-color: #006aff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.button{
-    color:#ffffff;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+#ask-btn:hover {
+    background-color: #e98d71;
 }
 
+/* Footer */
+footer {
+    background-color: #004594;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
+footer p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/*!!!!!!content media queries!!!!!!! START*/
-
-
-/* small screen */
-@media (min-width: 200px){
-    
-    .project {
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        margin-top: 50px;
-        border-bottom: 50px;
+/* Responsive Design */
+@media (max-width: 900px) {
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
 
-    p{
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
+    .proejct-img {
+        width: 100%;
         margin-bottom: 20px;
-        line-height: 20px;
     }
 
-    .pjct-img{
-        max-width: 100%;
+    .project-info {
+        width: 100%;
     }
 
-    .rounded-box {
-        max-width: 80%; 
-        margin:auto;
+    .project-content {
+        flex-direction: column;
     }
 
-    body h1{
-        font-size: 25px;
+
+    .project-grid {
+        grid-template-columns: 2fr; 
     }
 
-    .rounded-box h2{
-        font-size: 15px;
+    .project-card {
+        margin-bottom: 20px; 
     }
 }
 
-/*medium screen */
-@media (min-width: 900px) {
+@media (max-width: 600px) {
+    
 
-    .rounded-box {
-        max-width: 90%; 
+    .project-info h1 {
+        font-size: 2rem;
+    }
+    
+
+    .project-grid {
+        grid-template-columns: 1fr; 
     }
 
-    .project {
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        margin-top:10px;
+    .project-card {
+        margin-bottom: 20px; 
     }
 
-    .introduction-text{
-        line-height: 35px;
-    }
-
-    body h1{
-        font-size: 30px;
-    }
-
-    .rounded-box h2{
-        font-size: 15px;
-    }
 }
 
 
 
-
-/*big screen*/
-@media (min-width: 1100px) {
-
-    .rounded-box {
-        max-width: 90%; 
-    }
-
-    .project {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top:50px;
-    }
-
-    .introduction-text{
-        line-height: 30px;
-    }
-
-    body h1{
-        font-size: 50px;
-    }
-
-    .rounded-box h2{
-        font-size: 20px;
-    }
-
-}

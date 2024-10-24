@@ -19,8 +19,8 @@
 }
 
 .topnav a {
-    float: left;
-    display: block;
+    float: right;
+    display: flex;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
@@ -80,7 +80,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #e98d71;
     overflow-x: hidden;
     transition: 0.5s;

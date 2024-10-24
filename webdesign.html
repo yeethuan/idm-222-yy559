@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="webdesign.css"> 
+    <link rel="stylesheet" href="web-design2.css"> 
     <link rel="stylesheet" href="header.css"> 
     <link rel="stylesheet" href="normalize.css"> 
     <script src="https://kit.fontawesome.com/f4cf6f4ce3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design</title>
+    <title>Projects</title>
 </head>
 
 
@@ -16,12 +16,13 @@
     <!-- close side panel -->
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-            <i class="fa fa-close"></i>
+            <i class="fa fa-bars"></i>
         </a>
-        <a href="https://yihuan-yang.netlify.app/" class="active">Home</a>
-        <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
-        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+        <a href="web-design2" class="active">Web Design 2</a>
         <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+        <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
+        <a href="https://yihuan-yang.netlify.app/" class="active">Home</a>
     </div>
 
     <!-- open sidepanel -->
@@ -29,10 +30,11 @@
         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="https://yihuan-yang.netlify.app/" class="active">Home</a>
-        <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
-        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+        <a href="web-design2" class="active">Web Design 2</a>
         <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+        <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
+        <a href="https://yihuan-yang.netlify.app/">Home</a>
     </div>
     
     <!-- side panel js start -->
@@ -62,29 +64,87 @@
     <!-- side panel js end -->
 </header>
 
-<body> <!--I need the <body> tag to call the h1 font in the css code>-->
-    <h1>PROJECTS</h1>
-    <div class="project">
-        <div class="pjct-img">
-            <div class="Color a Smile">
-                <img src="media/colorasmile-desktop.webp" alt="Color a Smile">
-            </div>
-        </div>
+<body>
+<section id="projects" class="projects-section">
 
-        <!--intro-->
-        <div class="rounded-box">
-            <div class="introduction-text">
-                <h2>COLOR A SMILE</h2>
-                <h3>Figma Prototype</h3>
-                <p> 
-                    The focus was on creating a <strong>vibrant, enjoyable, and lively</strong> website that aligns with its name and branding. Emphasizing <strong>accessibility</strong> for a diverse user base was another key consideration. The challenge lay in effectively incorporating bright colors while maintaining a delicate balance to ensure ample contrast for text legibility. Streamlining content by eliminating redundancies resulted in a more concise set of text and components.
-                </p>
-                    <div class="container">
-                        <a href="https://www.figma.com/proto/zpgADdK8XqnoRSx7nwLOap/yy559-IDM212-002-Final?page-id=0%3A1&type=design&node-id=97-43&viewport=-1077%2C465%2C0.19&t=u90xV7QOw4D6Q7ag-1&scaling=scale-down&starting-point-node-id=97%3A43&show-proto-sidebar=1&mode=design" class="button">view interactive protoype >></a>
-                    </div>
-                
-            </div>
+    <h2>Projects</h2>   
+    <div class="project-grid" id="project-grid">
+        <!-- Project: SIMMER: html, css, js, php, mysql-->
+        <div class="project-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/projects/simmer-thumbnail.jpg" alt="Simmer">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>Simmer</h3>
+            </a>
+            <p>HTML5 CSS3 JavaScript PHP MySQL</p>
+        </div>
+        <!-- Project: OUTLOOK: User Research + Microinteraction Analysis-->
+        <div class="project-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/projects/outlook-thumbnail.jpg" alt="Outlook">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>Outlook</h3>
+            </a>
+            <p>Microinteraction Analysis and User Research</p>
+        </div>
+        <!-- Project: UX Design + Research -->
+        <div class="project-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/projects/petes-thumbnail.jpg" alt="Petes">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>Pete's Little Lunch Box</h3>
+            </a>
+            <p>UX Design + User Research</p>
+        </div>
+        <!-- Project: Which Pepper are you  -->
+        <div class="project-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/projects/pepper-thumbnail.jpg" alt="Pepper">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>How spicy are you?</h3>
+            </a>
+            <p>HTML5 CSS3 JavaScript</p>
+        </div>
+        <!-- Project: Color a Smile-->
+        <div class="project-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/projects/smile-thumbnail.jpg" alt="Smile">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>Color a Smile Redesign</h3>
+            </a>
+            <p>Figma Responsive Prototype</p>
+        </div>
+        <!-- Project: Day Night Button-->
+        <div class="project-card">
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <img src="media/projects/button-thumbnail.jpg" alt="DayNight">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+                <h3>Fun Button</h3>
+            </a>
+            <p>Figma</p>
         </div>
     </div>
+
+</section>
+
+<!-- Ask Button -->
+<div class="ask-button">
+    <button id="ask-btn">?</button>
+</div>
+
+<!-- footer -->
+<footer>
+    <p>Yi Huan Yang | yihuan.yang@drexel.edu | linkedin.com/in/yihuanyang/</p>
+</footer>
+
+
+
+
 </body>
 </html>
