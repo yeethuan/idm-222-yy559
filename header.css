@@ -26,7 +26,8 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial Bold', sans-serif;
+    font-weight: 600;
 }
 
 .topnav a:hover {
@@ -35,8 +36,8 @@
 }
 
 .topnav a.active {
-    background-color: #6e9eff;
-    color: #00246d
+    background-color: #ff7950;
+    color: #ffffff
 }
 
 .topnav a.icon {
