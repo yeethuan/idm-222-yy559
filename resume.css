@@ -39,16 +39,17 @@ header.header {
 header h1 {
     font-size: 3rem;
     font-weight: 600;
+    font-family:"Rock_3D";
 }
 
 header h4{
-    font-size: 30px;
+    font-size: 20px;
     line-height: 0;
     margin-top: 20px;
 }
 
 header p {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 300;
     margin-top: 10px;
     margin-bottom: 20px;
