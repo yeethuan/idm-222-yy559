@@ -16,12 +16,12 @@
     <!-- close side panel -->
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-            <i class="fa fa-close"></i>
+            <i class="fa fa-bars"></i>
         </a>
-        <a href="https://yihuan-yang.netlify.app/" class="active">Home</a>
+        <a href="https://yihuan-yang.netlify.app/">Home</a>
         <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
-        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
-        <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+        <a href="https://yihuan-yang.netlify.app/photography" >Photography</a>
+        <a href="https://yihuan-yang.netlify.app/resume" class="active">Resume</a>
     </div>
 
     <!-- open sidepanel -->
@@ -29,10 +29,10 @@
         <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="https://yihuan-yang.netlify.app/" class="active">Home</a>
-        <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
+        <a href="https://yihuan-yang.netlify.app/resume" class="active">Resume</a>
         <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
-        <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+        <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
+        <a href="https://yihuan-yang.netlify.app/">Home</a>
     </div>
     
     <!-- side panel js start -->
@@ -62,100 +62,111 @@
     <!-- side panel js end -->
 </header>
 
-<body> <!-- I need the body tag to call h1 in the css otherwise the margin wont work it's weird-->
-    <h1>Yi Huan Yang</h1>
-    <h4>UX/UI Designer | Philadelphia PA</h4>
-    
-
-    <div class="gallery">
-
-        <div class="desc">
-            <h2>Languages!</h2>
-            <ul>
-                <li>HTML (intermmediate)</li>
-                <li>CSS (intermmediate)</li>
-                <li>Javascript (beginner)</li>
-            </ul>
-            <ul>
-                <li>English (native)</li>
-                <li>Mandarin Chinese (fluent)</li>
-                <li>Fuzhounese Chinese (fluent)</li>
-            </ul>
+<body>
+    <header class="header">
+        <h1>Yi Huan Yang</h1>
+        <h4>UX/UI Designer</h4>
+        <p>Hello! I would love to pursue any positions in Frontend Development, User Research, UX Design, UI Design, or Information Architecture.</p>
+        <div class="contact">
+            <a href="mailto:yihuan.yang@drexel.edu" class="button">Email Me</a>
+            <a href="https://yihuan-yang.netlify.app/" target="_blank" class="button">Website</a>
+            <a href="https://linkedin.com/in/yihuanyang/" target="_blank" class="button">LinkedIn</a>
         </div>
+    </header>
 
-        <div class="desc">
-            <h2>Software</h2>
-            <ul>
-                <li>Adobe Photoshop and Lightroom</li>
-                <li>Figma</li>
-                <li>VS Code</li>
-                <li>Davinci Resolve</li>
-            </ul>
-        </div>
+    <main>
+        <!-- Education Card -->
+        <section class="card">
+            <h2>Education</h2>
+            <div class="divider"></div>
+            <div>
+                <h3>Drexel University</h3>
+                <p><strong>B.S. User Experience Interaction Design</strong></p>
+                <p>Honors: Philadelphia Heights Scholar, AJ Drexel Scholar, Dean’s List</p>
+                <p>Anticipated Graduation: June 2027</p>
+                <p>GPA: 3.61/4.0</p>
+            </div>
+            <div>
+                <h3>Central High School</h3>
+                <p><strong>Bachelor of Arts</strong></p>
+                <p>Philadelphia, PA | AUG 2018 - JUNE 2022</p>
+            </div>
+        </section>
 
+        <!-- Professional Experience Card -->
+        <section class="card">
+            <h2>Professional Experience</h2>
+            <div class="divider"></div>
+            <div>
+                <h3>Camden Fireworks</h3>
+                <p><strong>Program Management Intern</strong></p>
+                <p>APR 2024 - SEPT 2024</p>
+                <ul>
+                    <li>Supported the curatorial team in preparing and installing art exhibitions</li>
+                    <li>Conducted research on artists and artworks to aid in exhibition planning and marketing</li>
+                    <li>Developed a sponsorship program targeting high-profile donors</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Asian Americans United</h3>
+                <p><strong>Program Lead</strong></p>
+                <p>JUNE 2020 - AUG 2023</p>
+                <ul>
+                    <li>Led team to develop and deliver a DEI-focused curriculum</li>
+                    <li>Conducted over 700 street interviews on gentrification in Chinatown</li>
+                    <li>Designed campaign infographics generating 2000+ likes</li>
+                </ul>
+            </div>
+            <div>
+                <h3>The Fabric Workshop and Art Museum</h3>
+                <p><strong>Development Intern</strong></p>
+                <p>JUNE 2021- AUG 2021</p>
+                <ul>
+                    <li>Managed, arranged, and designed profile booklets for artists Henry Taylor and Ahmed Alsoudani</li>
+                    <li>Conducted market analysis and research to inform updates to the membership program</li>
+                    <li>Designed official invitation for a high-profile, formal event in collaboration with Marlborough Gallery New York</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="desc">
-            <h2>Communication</h2>
-            <ul>
-                <li>Canva</li>
-                <li>Slack</li>
-                <li>Asana</li>
-                <li>Microsoft Office</li>
-            </ul>
-        </div>
+        <!-- Leadership Experience Card -->
+        <section class="card">
+            <h2>Leadership Experience</h2>
+            <div class="divider"></div>
+            <div>
+                <h3>Society of Asian Students and Engineers</h3>
+                <p><strong>Marketing Director</strong></p>
+                <p>JUNE 2023 - PRESENT</p>
+                <ul>
+                    <li>Oversee marketing channels, increasing reach by 20%.</li>
+                    <li>Improved team collaboration with a design system.</li>
+                    <li>Managed events with over 90 attendees using Slack and Asana.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Asian American Philadelphia Advocacy Conference</h3>
+                <p><strong>Conference Director</strong></p>
+                <p>NOV 2022 - JUNE 2024</p>
+                <ul>
+                    <li>Oversee marketing channels, increasing reach by 20%.</li>
+                    <li>Improved team collaboration with a design system.</li>
+                    <li>Managed events with over 90 attendees using Slack and Asana.</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="desc">
-            <h2>Asian Americans United</h2>
-            <img src="media/aau.webp" alt="AAU Project"><br>
-            <h3>Program Lead | June 2020 - Aug 2023</h3>
-            <ul>
-                <li>
-                    Led faculty team to develop and deliver DEI-/cultural studies-focused curriculum for 6-week high school program
-                </li>
-                <li>
-                    Conducted over 700 street interviews to
-                    analyze local views on the impact of gentrification in Chinatown</li>
-                <li>
-                    Designed digital and print infographics for Anti-Gentrification campaign; social media post generated over 1500 likes
-                </li>
-            </ul>
-        </div>
-            
-        <div class="desc">
-            <h2>Fabric Workshop and Museum</h2>
-            <img src="media/fwm-marlborough-cocktail.webp" alt="FWM">
-            <h3>Development Intern | June 2021 - Aug 2021</h3>
-            <ul>
-                <li>
-                    Managed, arranged, and designed profile booklets for artists Henry Taylor and Ahmed Alsoudani
-                </li>
-                <li>
-                    Conducted market analysis and research to inform updates to the membership program
-                </li>
-                <li>
-                    Designed official invitation for a high-profile, formal event in collaboration with Marlborough Gallery New York
-                </li>
-            </ul>
-        </div>
+        <!-- Additional Information Card -->
+        <section class="card">
+            <h2>Additional Information</h2>
+            <div class="divider"></div>
+            <p><strong>Skills:</strong> VS Code, GitHub, Canva, Adobe Photoshop, DaVinci Resolve</p>
+            <p><strong>Programming Languages:</strong> HTML5, CSS3, JavaScript (beginner), PHP (beginneri), MySQL (beginner)</p>
+            <p><strong>Languages:</strong> English, Mandarin, Fuzhounese</p>
+        </section>
+    </main>
 
-        <div class="desc">
-            <h2>Asian American Philadelphia Advocacy Conference</h2>
-            <img src="media/23-brochure.webp" alt="AAPAC">
-            <h3>Conference Director | June 2023-Present</h3>
-            <ul>
-                <li>
-                    Led online and offline marketing campaigns to double media traffic, which led to 2x growth in conference attendees
-                </li>
-                <li>
-                    Initiated contact with and organized 4 of the 6 performers to successfully deliver their sessions
-                </li>
-                <li>
-                    Co-facilitated a workshop for 30 attendees with the Associate Dean of DEI on arts and cultural identity
-                </li>
-            </ul>
-        </div>
-    </div>
-
+    <footer>
+        <p>Yi Huan Yang | User Experience Interaction Designer</p>
+    </footer>
 </body>
-
 </html>

@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+p{
+    margin:10px;
+}
+
 .projects-section {
     padding: 50px 0;
     background-color: #fefefe;
