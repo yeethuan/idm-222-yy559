@@ -118,14 +118,24 @@
             <p>Figma Responsive Prototype</p>
         </div>
         <!-- Project: Day Night Button-->
-        <div class="project-card">
-            <a href="https://idm-232-yy559.netlify.app/recipe-1" target="_blank">
+        <div class="project-card" onclick="openPopup()">
+            <a href="javascript:void(0);">
                 <img src="media/projects/button-thumbnail.jpg" alt="DayNight">
             </a>
-            <a href="https://idm-232-yy559.netlify.app/recipe-1">
+            <a href="javascript:void(0);">
                 <h3>Fun Button</h3>
             </a>
             <p>Figma</p>
+        </div>
+
+        <div id="popupModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h3>Fun Button Project</h3>
+                <video controls>
+                    <source src="media/projects/day-night-button.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 
