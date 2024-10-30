@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="smile.css"> 
+    <link rel="stylesheet" href="header.css"> 
+    <link rel="stylesheet" href="normalize.css"> 
+    <script src="https://kit.fontawesome.com/f4cf6f4ce3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color a Smile</title>
+</head>
+
+
+<header>
+    <!-- close side panel -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="https://yihuan-yang.netlify.app/">Home</a>
+        <a href="https://yihuan-yang.netlify.app/webdesign" class="active">Web Design</a>
+        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+        <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+    </div>
+
+    <!-- open sidepanel -->
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+        <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+        <a href="https://yihuan-yang.netlify.app/webdesign" class="active">Web Design</a>
+        <a href="https://yihuan-yang.netlify.app/">Home</a>
+    </div>
+    
+    <!-- side panel js start -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+            }
+    
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+    
+            function toggleNav() {
+                var sidepanel = document.getElementById("mySidepanel");
+                var topnav = document.getElementById("myTopnav");
+    
+                if (sidepanel.style.width === "250px") {
+                    sidepanel.style.width = "0";
+                    topnav.style.display = "block";
+                } else {
+                    sidepanel.style.width = "250px";
+                    topnav.style.display = "none";
+                }
+                
+            }
+        </script>
+    <!-- side panel js end -->
+</header>
+
+
+
+<body>
+
+    <div class="project-grid" id="project-grid">
+        <div class="project-card">
+            <a href="https://idm-232-yy559.netlify.app/" target="_blank">
+                <img src="media/projects/simmer-thumbnail.jpg" alt="Simmer">
+            </a>
+            <a href="https://idm-232-yy559.netlify.app/">
+                <h3>Color a Smile</h3>
+            </a>
+            <p>This is the original website before the redesign!</p>
+        </div>
+        <div class="project-card">
+            <a href="https://www.figma.com/proto/zpgADdK8XqnoRSx7nwLOap/yy559-IDM212-002-Final?page-id=0%3A1&node-id=97-43&starting-point-node-id=97%3A43&t=tKVW1uWOcEpVeJW4-1" target="_blank">
+                <img src="media/projects/outlook-thumbnail.jpg" alt="Outlook">
+            </a>
+            <a href="https://www.figma.com/proto/zpgADdK8XqnoRSx7nwLOap/yy559-IDM212-002-Final?page-id=0%3A1&node-id=97-43&starting-point-node-id=97%3A43&t=tKVW1uWOcEpVeJW4-1">
+                <h3>Color a Smile</h3>
+            </a>
+            <p>This is my redesign using Figma</p>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <p>Yi Huan Yang | yihuan.yang@drexel.edu | linkedin.com/in/yihuanyang/</p>
+    </footer>
+</body>
+
+</html>
