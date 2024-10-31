@@ -35,6 +35,9 @@
 .topnav a:hover {
     background-color: #004594;
     color: #ffffff;
+    padding: 6px 10px 6px 6px;
+    border-radius: 40px;
+    transition: .3s ease in;
 }
 
 .topnav a.active {
@@ -55,6 +58,7 @@
     .topnav a.icon{
         float: right;
         display: block;
+
     }
 
     .topnav.responsive {position: relative;}
