@@ -35,14 +35,17 @@
 .topnav a:hover {
     background-color: #004594;
     color: #ffffff;
-    padding: 6px 10px 6px 6px;
+    padding: 6px 8px 6px 8px;
     border-radius: 40px;
-    transition: .3s ease in;
+    transition: .3ms ease-in-out;
 }
 
 .topnav a.active {
     background-color: #004594;
     color: #ffffff
+    padding: 6px 8px 6px 8px;
+    border-radius: 40px;
+    transition: .3ms ease-in-out;
 }
 
 .topnav a.icon {
