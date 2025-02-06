@@ -1,1 +1,87 @@
-home
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="header.css"> 
+    <link rel="stylesheet" href="normalize.css"> 
+    <script src="https://kit.fontawesome.com/f4cf6f4ce3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+
+<header>
+        <!-- close side panel -->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="https://yihuan-yang.netlify.app/"class="active">Home</a>
+            <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
+            <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+            <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+        </div>
+    
+        <!-- open sidepanel -->
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="https://yihuan-yang.netlify.app/resume">Resume</a>
+            <a href="https://yihuan-yang.netlify.app/photography">Photography</a>
+            <a href="https://yihuan-yang.netlify.app/webdesign">Web Design</a>
+            <a href="https://yihuan-yang.netlify.app/" class="active">Home</a>
+        </div>
+    
+    <!-- side panel js start -->
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+            }
+    
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+    
+            function toggleNav() {
+                var sidepanel = document.getElementById("mySidepanel");
+                var topnav = document.getElementById("myTopnav");
+    
+                if (sidepanel.style.width === "250px") {
+                    sidepanel.style.width = "0";
+                    topnav.style.display = "block";
+                } else {
+                    sidepanel.style.width = "250px";
+                    topnav.style.display = "none";
+                }
+                
+            }
+        </script>
+    <!-- side panel js end -->
+    </header>
+
+
+
+<body>
+    <div class="introduction">
+        Hello visitor! I'm a digital storyteller passionate about crafting human-centered experiences that connect and inspire. 
+
+        I believe in the power of storytelling to foster empathy and understanding, especially to amplifying the voices of underrepresented communities. 
+    </div>
+    
+    <div class="project">
+        <img src="media/outlook-project-hero-image.webp" alt="idm241casestudybanner">
+        
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>Yi Huan Yang | yihuan.yang@drexel.edu | linkedin.com/in/yihuanyang/</p>
+    </footer>
+</body>
+
+
+
+</html>
